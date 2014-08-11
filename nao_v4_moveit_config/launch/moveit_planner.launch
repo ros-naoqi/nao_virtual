@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Call Nao Robot publisher -->
+    <include file="$(find nao_description)/launch/nao_desc_generated.launch" />
+	
+    <!-- Start move_group -->
+ 	<include file="$(find nao_v4_moveit_config)/launch/move_group.launch">
+ 		<arg name="publish_monitored_planning_scene" value="true" />
+	</include>
+
+	<!-- Start Rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nao_v4_moveit_config)/config/moveit.rviz" />
+</launch>
