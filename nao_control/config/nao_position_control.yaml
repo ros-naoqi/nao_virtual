@@ -1,0 +1,112 @@
+nao:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Controllers ------------------------------------------------
+  HeadYaw_position_controller:
+    type: position_controllers/JointPositionController
+    joint: HeadYaw
+
+  HeadPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: HeadPitch
+
+  LShoulderPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LShoulderPitch
+
+  LElbowYaw_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LElbowYaw
+
+  LWristYaw_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LWristYaw
+
+  LHand_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LHand
+
+  LShoulderRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LShoulderRoll
+
+  LElbowRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LElbowRoll
+
+  RShoulderPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RShoulderPitch
+
+  RElbowYaw_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RElbowYaw
+
+  RWristYaw_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RWristYaw
+
+  RHand_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RHand
+
+  RShoulderRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RShoulderRoll
+
+  RElbowRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RElbowRoll
+
+  LHipYawPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LHipYawPitch
+
+  LHipRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LHipRoll
+
+  LHipPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LHipPitch
+
+  LKneePitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LKneePitch
+
+  LAnklePitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LAnklePitch
+
+  LAnkleRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: LAnkleRoll
+
+  RHipYawPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RHipYawPitch
+
+  RHipRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RHipRoll
+
+  RHipPitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RHipPitch
+
+  RKneePitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RKneePitch
+
+  RAnklePitch_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RAnklePitch
+
+  RAnkleRoll_position_controller:
+    type: position_controllers/JointPositionController
+    joint: RAnkleRoll
+
+

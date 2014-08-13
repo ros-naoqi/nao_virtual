@@ -1,0 +1,71 @@
+nao_dcm:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50  
+
+  # Controllers ------------------------------------------------
+  Head_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - HeadYaw
+      - HeadPitch
+  LeftArm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - LShoulderPitch
+      - LShoulderRoll
+      - LElbowYaw
+      - LElbowRoll
+  RightArm_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - RShoulderPitch
+      - RShoulderRoll
+      - RElbowYaw
+      - RElbowRoll
+  LeftHand_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - LWristYaw
+      - LHand
+  RightHand_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - RWristYaw
+      - RHand
+  Pelvis_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - LHipYawPitch
+  LeftLeg_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - LHipRoll
+      - LHipPitch
+      - LKneePitch
+#      - LAnklePitch
+#      - LAnkleRoll
+  RightLeg_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - RHipRoll
+      - RHipPitch
+      - RKneePitch
+#      - RAnklePitch
+#      - RAnkleRoll
+  LeftFoot_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - LAnklePitch
+      - LAnkleRoll
+  RightFoot_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - RAnklePitch
+      - RAnkleRoll
+#  Head_controller:
+#    type: position_controllers/JointTrajectoryController
+#    joints:
+#      - HeadYaw
+#      - HeadPitch
