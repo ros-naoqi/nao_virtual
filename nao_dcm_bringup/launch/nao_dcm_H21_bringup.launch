@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Call Nao Robot publisher -->
+  <include file="$(find nao_dcm_description)/launch/nao_dcm_H21_urdf.launch" />
+
+  <!-- Nao Diagnostics -->
+  <node pkg="diagnostic_aggregator" type="aggregator_node" name="nao_dcm_diagnostic_aggregator">
+    <rosparam file="$(find nao_dcm_driver)/config/nao_dcm_analyzers.yaml" command="load"/>
+  </node>
+
+  <!-- Call Nao Robot Trajectory Controller -->
+  <include file="$(find nao_dcm_control)/launch/nao_dcm_trajectory_control_H21.launch"/>
+
+  <!-- Do Not Run Dashboard -->
+  <!-- <node name="rqt_gui" pkg="rqt_gui" type="rqt_gui" args="-s nao_dcm_rqt_dashboard" output="screen"/> -->
+
+  <!-- Call Nao Robot Driver -->
+  <node pkg="nao_dcm_driver" type="nao_dcm_driver" name="nao_dcm_driver" respawn="false" output="screen" >
+    <remap from="/joint_states" to="/nao_dcm/joint_states"/>
+    <remap from="/controller_manager" to="/nao_dcm/controller_manager"/>
+    <!-- Load configurations from YAML file to parameter server -->
+    <rosparam file="$(find nao_dcm_bringup)/config/nao_dcm.yaml" command="load"/>
+    <!-- Specify Robot Body Type on Parameter Server -->
+    <param name="BodyType" value="H21"/>
+  </node>
+
+  <!-- Call Nao Camera -->
+  <!-- <node pkg="nao_dcm_driver" type="nao_dcm_camera" name="nao_dcm_camera" respawn="false" output="screen">
+    <remap from="CameraTopNode/set_camera_info" to="/nao_dcm/CameraTop/set_camera_info"/>
+    <remap from="CameraBottomNode/set_camera_info" to="/nao_dcm/CameraBottom/set_camera_info"/>
+  </node> -->
+
+  <!-- Call helper nodes to get visual odometry and combine it with imu data -->
+  <!-- <node name="viso" pkg="viso2_ros" type="mono_odometer" respawn="false" output="screen">
+    <param name="sensor_frame_id" value="/CameraTop"/>
+    <param name="publish_tf" value="false"/>
+    <remap from="image" to="/nao_dcm/CameraTop/image_raw"/>
+    <remap from="/viso/odometry" to="/nao_dcm/odom"/>
+  </node> -->
+
+  <!-- <node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+    <param name="output_frame" value="odom_combined"/>
+    <param name="base_footprint_frame" value="base_link"/>
+    <param name="freq" value="100.0"/>
+    <param name="sensor_timeout" value="1.0"/>
+    <param name="odom_used" value="true"/>
+    <param name="imu_used" value="true"/>
+    <param name="vo_used" value="false"/>
+    <param name="debug" value="false"/>
+    <param name="self_diagnose" value="false"/>
+    <remap from="imu_data" to="nao_dcm/imu_data"/>
+    <remap from="odom" to="nao_dcm/odom"/>
+    <remap from="robot_pose_ekf/odom_combined" to="nao_dcm/odom_combined"/>
+  </node> -->
+	
+</launch>

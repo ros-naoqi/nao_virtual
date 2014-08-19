@@ -1,0 +1,41 @@
+# DO NOT CHANGE IT
+Version: V4
+
+# Choose what components are enabled on startup
+SonarEnabled: true
+TactilesEnabled: true
+BumpersEnabled: true
+FootContactsEnabled: true
+
+# Camera related parameters
+UseCamera: true
+TopCameraEnabled: true
+BottomCameraEnabled: true
+
+# Application related parameters
+PublishIMU: true
+
+# ROS related paramaters
+TopicQueue: 10
+
+# Robot-Connection related parameters
+RobotPort: 9559
+RobotIP: 10.0.132.254 
+DriverBrokerPort: 54000
+DriverBrokerIP: 0.0.0.0
+CameraBrokerPort: 54001
+CameraBrokerIP: 0.0.0.0
+
+# Communication related parameters
+HighCommunicationFrequency: 15
+LowCommunicationFrequency: 10
+# 100Hz are perfect for Webots, 5-10Hz works really beautiful on my real Nao
+ControllerFrequency: 100
+CameraFrequency: 15
+
+# Robot related parameters
+JointPrecision: 0.00174532925
+OdomFrame: odom
+
+# DO NOT CHANGE IT
+Prefix: nao_dcm

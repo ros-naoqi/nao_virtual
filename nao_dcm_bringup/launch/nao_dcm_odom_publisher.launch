@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- Call helper node to get rectified images from stereo system -->
+	<node name="stereo_proc" pkg="stereo_image_proc" type="stereo_image_proc" respawn="false" output="screen">
+		<remap from="/left/image_raw" to="/nao_dcm/CameraLeft/image_raw"/>
+		<remap from="/left/camera_info" to="/nao_dcm/CameraLeft/camera_info"/>
+		<remap from="/right/image_raw" to="/nao_dcm/CameraRight/image_raw"/>
+		<remap from="/right/camera_info" to="/nao_dcm/CameraRight/camera_info"/>
+		<param name="approximate_sync" value="True" />
+	</node>
+
+	<!-- Call helper nodes to get visual odometry and combine it with imu data -->
+	<node name="viso" pkg="viso2_ros" type="stereo_odometer" respawn="false" output="screen">
+		<param name="publish_tf" value="true"/>
+		<param name="approximate_sync" value="True" />
+		<remap from="stereo/left/image" to="/left/image_rect"/>
+		<remap from="stereo/left/camera_info" to="/nao_dcm/CameraLeft/camera_info"/>
+		<remap from="stereo/right/image" to="/right/image_rect"/>
+		<remap from="stereo/right/camera_info" to="/nao_dcm/CameraRight/camera_info"/>
+		<remap from="/viso/odometry" to="/nao_dcm/odom"/>
+	</node>
+	
+</launch>
