@@ -12,5 +12,30 @@
       <name>gas_station</name>
       <pose>-2.0 7.0 0 0 0 0</pose>
     </include>
+<!--
+    <physics type='ode'>
+      <max_step_size>0.00100</max_step_size>
+      <real_time_factor>1.000000</real_time_factor>
+      <real_time_update_rate>1000.000000</real_time_update_rate>
+      <gravity>0.000000 0.000000 -9.800000</gravity>
+    </physics>
+-->
+<!--
+    <physics type='ode'>
+      <max_step_size>0.00200</max_step_size>
+      <real_time_factor>1.000000</real_time_factor>
+      <real_time_update_rate>500.000000</real_time_update_rate>
+      <gravity>0.000000 0.000000 -9.800000</gravity>
+    </physics>
+-->
+<!--
+    <physics type='ode'>
+      <max_step_size>0.00400</max_step_size>
+      <real_time_factor>1.000000</real_time_factor>
+      <real_time_update_rate>250.000000</real_time_update_rate>
+      <gravity>0.000000 0.000000 -9.800000</gravity>
+    </physics>
+-->
+
   </world>
 </sdf>

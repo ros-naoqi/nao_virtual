@@ -3,25 +3,28 @@
   <!-- Load the URDF Model -->
   <include file="$(find nao_description)/launch/nao_desc_generated.launch" />  
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+<!--  <include file="$(find gazebo_ros)/launch/empty_world.launch">  -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find nao_gazebo_plugin)/worlds/nao_test.world"/>
+    <arg name="world_name" value="$(find nao_gazebo_plugin)/worlds/naoFoot.world"/>
     <arg name="paused" value="true"/>
-    <!-- more default parameters can be changed here -->
   </include>
-  <!-- convert joint states to TF transforms for rviz, etc -->
+
 
   <!-- Use PIDs?? -->
+
   <arg name="use_pid" value="true"/>
   <group if="$(arg use_pid)">
     <rosparam file="$(find nao_gazebo_plugin)/config/gazebo_ros_control_params.yaml" command="load"/>
   </group>
 
   <!-- Call Nao Robot Trajectory Controller -->
+
+  <include file="$(find nao_control)/launch/nao_control_trajectory.launch"/>
 <!--
-  <include file="$(find nao_control)/launch/nao_control_trajectory.launch"/> -->
-  <include file="$(find nao_control)/launch/nao_control_position.launch"/> 
+  <include file="$(find nao_control)/launch/nao_control_position.launch"/>
+-->
   <!-- Spawn a robot into Gazebo -->
 <!--  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 0 -y 0 -z 0.335 -model nao_robot_v4_H25" /> -->
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x 0 -y 0 -z 0.535 -model nao_robot_v4_H25" /> 
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -x -0.5 -y 1 -z 0.535 -model nao_v40" /> 
 
 </launch>
