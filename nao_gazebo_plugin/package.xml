@@ -6,9 +6,10 @@
 
   <maintainer email="mikael.arguedas@gmail.com">Mikael Arguedas</maintainer>
   <author email="costashatz@gmail.com">Konstantinos Chatzilygeroudis</author>
+  <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
+
   <license>Apache 2.0</license>
 
-  <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
 
   <run_depend>gazebo_ros</run_depend>
   <run_depend>nao_control</run_depend>
