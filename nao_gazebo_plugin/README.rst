@@ -88,10 +88,7 @@ How to interact with simulated robot
 
 Using MoveIt!:
 
-You can use nao_moveit_config package to controle your simulated robot:
-Please refer to https://github.com/ros-nao/nao_moveit_config/blob/master/tuto/tuto_moveit.rst
-
-and launch:
+To control your simulated robot using MoveIt, run:
 .. code-block:: bash
 
     roslaunch nao_moveit_config moveit_planner.launch
