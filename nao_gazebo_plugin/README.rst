@@ -68,7 +68,7 @@ Each sensor publish data on rostopics.
 
 We can visualize topics using Ctrl+T or Window/Topic Visualization
 
-.. image:: TopicVisu.png   
+.. image:: images/TopicVisu.png   
    :width: 100%
 
 For example viusalizing Cameras and sonar
