@@ -2,14 +2,22 @@
 <launch>
 
   <!-- Load joint controller configurations from YAML file to parameter server -->
+
   <rosparam file="$(find nao_control)/config/nao_position_control.yaml" command="load"/>
 
   <!-- load the controllers -->
+
   <node name="nao_controller" pkg="controller_manager" type="spawner" respawn="false"
     output="screen" ns="/nao_dcm" args="/nao_dcm/HeadYaw_position_controller /nao_dcm/HeadPitch_position_controller /nao_dcm/LShoulderPitch_position_controller /nao_dcm/LElbowYaw_position_controller /nao_dcm/LWristYaw_position_controller /nao_dcm/LShoulderRoll_position_controller /nao_dcm/LElbowRoll_position_controller /nao_dcm/RShoulderPitch_position_controller /nao_dcm/RElbowYaw_position_controller /nao_dcm/RWristYaw_position_controller /nao_dcm/RShoulderRoll_position_controller /nao_dcm/RElbowRoll_position_controller /nao_dcm/LHipYawPitch_position_controller /nao_dcm/LHipRoll_position_controller /nao_dcm/LHipPitch_position_controller /nao_dcm/LKneePitch_position_controller /nao_dcm/LAnklePitch_position_controller /nao_dcm/LAnkleRoll_position_controller /nao_dcm/RHipYawPitch_position_controller /nao_dcm/RHipRoll_position_controller /nao_dcm/RHipPitch_position_controller /nao_dcm/RKneePitch_position_controller /nao_dcm/RAnklePitch_position_controller /nao_dcm/RAnkleRoll_position_controller /nao_dcm/LHand_position_controller /nao_dcm/RHand_position_controller /nao_dcm/joint_state_controller"/>
 
+<!--
+  <node name="nao_controller" pkg="controller_manager" type="spawner" respawn="false"
+    output="screen" ns="/nao_dcm" args="/nao_dcm/joint_state_controller"/>
+-->
+
   <!-- convert joint states to TF transforms for rviz, etc -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
+
+     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
     respawn="false" output="screen">
     <remap from="/joint_states" to="/nao_dcm/joint_states" /> 
   </node>

@@ -109,4 +109,3 @@ nao_dcm:
     type: position_controllers/JointPositionController
     joint: RAnkleRoll
 
-
