@@ -73,13 +73,13 @@ We can visualize topics using Ctrl+T or Window/Topic Visualization
 
 For example viusalizing Cameras and sonar
 
-.. image:: GazeboCamSonar.png
+.. image:: images/GazeboCamSonar.png
    :width: 100%
 
 
 We can also visualize these messages using Rviz plugins
 
-.. image:: MoveitCamSonar.png
+.. image:: images/MoveitCamSonar.png
    :width: 100%
 
 
