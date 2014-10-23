@@ -32,8 +32,8 @@ Please also make sure that the package and all the dependencies are up to date
 
 .. code-block:: bash
     
-    sudo apt-get install ros-indigo-nao-gazebo-plugin
     sudo apt-get update
+    sudo apt-get install ros-indigo-nao-gazebo-plugin
 
 
 How to run it
@@ -71,7 +71,7 @@ We can visualize topics using Ctrl+T or Window/Topic Visualization
 .. image:: images/TopicVisu.png   
    :width: 100%
 
-For example viusalizing Cameras and sonar
+For example, visualizing Cameras and sonar
 
 .. image:: images/GazeboCamSonar.png
    :width: 100%
