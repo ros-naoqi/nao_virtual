@@ -10,27 +10,18 @@
 
   <license>Apache 2.0</license>
 
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>nao_description</build_depend>
+  <build_depend>ros_control</build_depend>
+  <build_depend>ros_controllers</build_depend>
 
+  <run_depend>gazebo_plugins</run_depend>
   <run_depend>gazebo_ros</run_depend>
+  <run_depend>gazebo_ros_control</run_depend>
   <run_depend>nao_control</run_depend>
   <run_depend>nao_description</run_depend>
-
-  <build_depend>ros_control</build_depend> 
-  <build_depend>ros_controllers</build_depend> 
-  <build_depend>nao_description</build_depend> 
-  <build_depend>gazebo_ros</build_depend> 
-  <build_depend>nao_control</build_depend> 
-     
-
-  <run_depend>ros_control</run_depend> 
-  <run_depend>ros_controllers</run_depend> 
-  <run_depend>nao_description</run_depend> 
-  <run_depend>gazebo_ros</run_depend> 
-  <run_depend>nao_control</run_depend> 
-
+  <run_depend>ros_control</run_depend>
+  <run_depend>ros_controllers</run_depend>
 
   <buildtool_depend>catkin</buildtool_depend>
-
-
-
 </package>
