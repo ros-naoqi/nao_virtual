@@ -2,8 +2,8 @@
 Changelog for package nao_gazebo_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.2 (2014-10-27)
+------------------
 * add missing runtime dependencies
 * fix typos
 * fix bad code block display
