@@ -2,6 +2,11 @@
 Changelog for package nao_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* update controller list
+* Contributors: margueda
+
 0.0.1 (2014-09-28)
 ------------------
 * cleanups

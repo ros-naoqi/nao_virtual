@@ -2,6 +2,20 @@
 Changelog for package nao_gazebo_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* add missing runtime dependencies
+* fix typos
+* fix bad code block display
+* Update README.rst
+* bug fix on images path
+* add images to readme
+* update README
+* new world + README file
+* update dependency list
+* new world file for real time testing
+* Contributors: Arguedas Mikael, Vincent Rabaud, margueda
+
 0.0.1 (2014-09-28)
 ------------------
 * cleanups
