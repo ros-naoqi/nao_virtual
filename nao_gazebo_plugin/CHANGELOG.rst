@@ -2,8 +2,8 @@
 Changelog for package nao_gazebo_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.3 (2014-12-04)
+------------------
 * remove dependencies that are not pacakges
 * Added a rosinstall file with some instructions of the current status
 * Added a launcher that launches empty world (and not the football field which is failing to download now)
