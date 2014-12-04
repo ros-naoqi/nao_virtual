@@ -1,0 +1,76 @@
+# To use this rosinstall
+# in your workspace src folder (let's say ~/nao_ws/src) do: 
+# wstool init .
+# wstool merge <this_file>
+# wstool up -j8
+# Then make sure you have all dependencies:
+# cd <your_workspace>
+# rosdep install --from-paths src --ignore-src --rosdistro hydro -y
+# Everything went fine? compile! 
+# catkin_make
+# Before launching you must install the meshes...
+# Go to nao_meshes_installer and execute the last version for your platform
+# In my case: ./naomeshes-0.6.7-linux-x64-installer.run
+# You'll get a window asking you stuff, like where to store it
+# You must store it in your workspace (so it extract directly inside of 
+# nao_meshes directory. So you'll get nao_meshes/mesh/V40 directory structure)
+#
+
+
+# Nao on ROS
+- git: {local-name: nao_robot, uri: 'https://github.com/ros-naoqi/nao_robot'}
+- git: {local-name: naoqi_bridge, uri: 'https://github.com/ros-naoqi/naoqi_bridge'}
+
+# For gazebo simulation
+- git: {local-name: nao_virtual, uri: 'https://github.com/ros-naoqi/nao_virtual'}
+# Which depends on
+- git: {local-name: roboticsgroup_gazebo_plugins, uri: 'https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins'}
+- git: {local-name: pal_msgs, uri: 'https://github.com/pal-robotics/pal_msgs'}
+- git: {local-name: pal_gazebo_plugins, uri: 'https://github.com/pal-robotics/pal_gazebo_plugins'}
+
+# Meshes stuff
+- git: {local-name: nao_meshes_installer, uri: 'https://github.com/ros-naoqi/nao_meshes_installer'}
+- git: {local-name: nao_meshes, uri: 'https://github.com/ros-naoqi/nao_meshes'}
+
+# Errors when launching: roslaunch nao_gazebo_plugin nao_gazebo_plugin_H25.launch:
+# [ERROR] [1417694352.858359842]: This robot has a joint named "LHand" which is not in the gazebo model.
+# [FATAL] [1417694352.858470531]: Could not initialize robot simulation interface
+# [ERROR] [1417694352.860687169]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.860785452]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.860859614]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.860933605]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861005688]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861077975]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861149026]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861219481]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861290216]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861358217]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861428645]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861496914]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861567763]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861640345]: No joint named LHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861708811]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ERROR] [1417694352.861780051]: No joint named RHand. MimicJointPlugin could not be loaded.
+# [ WARN] [1417694352.863029445]: Link LFinger11 not found!
+# [ WARN] [1417694352.863214805]: Link LFinger12 not found!
+# [ WARN] [1417694352.863297080]: Link LFinger13 not found!
+# [ WARN] [1417694352.863367741]: Link LFinger21 not found!
+# [ WARN] [1417694352.863442127]: Link LFinger22 not found!
+# [ WARN] [1417694352.863513551]: Link LFinger23 not found!
+# [ WARN] [1417694352.863584133]: Link LThumb1 not found!
+# [ WARN] [1417694352.863654355]: Link LThumb2 not found!
+# [ WARN] [1417694352.863725743]: Link l_gripper not found!
+# [ WARN] [1417694352.863792708]: Link RFinger11 not found!
+# [ WARN] [1417694352.863863459]: Link RFinger12 not found!
+# [ WARN] [1417694352.863931413]: Link RFinger13 not found!
+# [ WARN] [1417694352.864002495]: Link RFinger21 not found!
+# [ WARN] [1417694352.864073632]: Link RFinger22 not found!
+# [ WARN] [1417694352.864144669]: Link RFinger23 not found!
+# [ WARN] [1417694352.864218942]: Link RThumb1 not found!
+# [ WARN] [1417694352.864290568]: Link RThumb2 not found!
+# [ WARN] [1417694352.864361212]: Link r_gripper not found!
+
+# Also many meshes not found, example:
+# Error [ModelDatabase.cc:408] Unable to download model[model://robocup09_spl_field/materials/scripts/]
+# Error [SystemPaths.cc:371] File or path does not exist[""]
+# Error [RenderEngine.cc:409] URI doesn't exist[model://robocup09_spl_field/materials/scripts/]
