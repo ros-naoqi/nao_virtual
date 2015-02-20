@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
   <!-- Load the URDF Model -->
-  <include file="$(find nao_description)/launch/nao_desc_generated.launch" />  
+  <include file="$(find nao_description)/launch/upload_nao.launch" />  
   <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
 <!--  <include file="$(find gazebo_ros)/launch/empty_world.launch">  -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
