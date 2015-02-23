@@ -4,11 +4,13 @@
   <version>0.0.3</version>
   <description>The nao_control package</description>
 
+  <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
   <maintainer email="mikael.arguedas@gmail.com">Mikael Arguedas</maintainer>
 
   <license>Apache 2.0</license>
 
-  <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
+  <url type="bugtracker">https://github.com/ros-naoqi/nao_virtual/issues</url>
+  <url type="repository">https://github.com/ros-naoqi/nao_virtual.git</url>
 
   <run_depend>controller_manager</run_depend>
   <run_depend>robot_state_publisher</run_depend>
