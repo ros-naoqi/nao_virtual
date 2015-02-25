@@ -44,16 +44,12 @@ nao_dcm:
       - LHipRoll
       - LHipPitch
       - LKneePitch
-#      - LAnklePitch
-#      - LAnkleRoll
   RightLeg_controller:
     type: position_controllers/JointTrajectoryController
     joints:
       - RHipRoll
       - RHipPitch
       - RKneePitch
-#      - RAnklePitch
-#      - RAnkleRoll
   LeftFoot_controller:
     type: position_controllers/JointTrajectoryController
     joints:
@@ -64,8 +60,3 @@ nao_dcm:
     joints:
       - RAnklePitch
       - RAnkleRoll
-#  Head_controller:
-#    type: position_controllers/JointTrajectoryController
-#    joints:
-#      - HeadYaw
-#      - HeadPitch
