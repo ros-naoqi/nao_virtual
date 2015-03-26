@@ -2,8 +2,8 @@
 Changelog for package nao_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.4 (2015-03-26)
+------------------
 * Added foot and pelvis controller in trajectory control launch file in nao_control. Minor cleaning in nao_control
 * update repos links
   added run dependencies (not generating warnings)

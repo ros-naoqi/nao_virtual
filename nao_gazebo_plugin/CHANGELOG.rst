@@ -2,8 +2,8 @@
 Changelog for package nao_gazebo_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.4 (2015-03-26)
+------------------
 * update repos links
   added run dependencies (not generating warnings)
 * Renamed launch files according to nao_description renames..
