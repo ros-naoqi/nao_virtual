@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>nao_gazebo_plugin</name>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <description>The nao_gazebo_plugin package</description>
 
   <maintainer email="mikael.arguedas@gmail.com">Mikael Arguedas</maintainer>

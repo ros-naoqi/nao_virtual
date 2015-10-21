@@ -2,8 +2,8 @@
 Changelog for package nao_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.5 (2015-10-21)
+------------------
 * configuring to use with MoveIt
 * Contributors: nlyubova
 
