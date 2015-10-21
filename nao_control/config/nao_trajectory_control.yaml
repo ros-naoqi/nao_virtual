@@ -17,6 +17,7 @@ nao_dcm:
       - LShoulderRoll
       - LElbowYaw
       - LElbowRoll
+      - LWristYaw
   RightArm_controller:
     type: position_controllers/JointTrajectoryController
     joints:
@@ -24,15 +25,14 @@ nao_dcm:
       - RShoulderRoll
       - RElbowYaw
       - RElbowRoll
+      - RWristYaw
   LeftHand_controller:
     type: position_controllers/JointTrajectoryController
     joints:
-      - LWristYaw
       - LHand
   RightHand_controller:
     type: position_controllers/JointTrajectoryController
     joints:
-      - RWristYaw
       - RHand
   Pelvis_controller:
     type: position_controllers/JointTrajectoryController

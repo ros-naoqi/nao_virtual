@@ -6,12 +6,12 @@
 
   <!-- load the controllers -->
   <node name="nao_trajectory_controller" pkg="controller_manager" type="spawner" respawn="false"
-    output="screen" ns="/nao_dcm" args="/nao_dcm/Head_controller /nao_dcm/RightArm_controller /nao_dcm/LeftArm_controller /nao_dcm/LeftLeg_controller /nao_dcm/RightLeg_controller /nao_dcm/RightHand_controller /nao_dcm/LeftHand_controller /nao_dcm/Pelvis_controller /nao_dcm/LeftFoot_controller /nao_dcm/RightFoot_controller /nao_dcm/joint_state_controller "/>
-
-  <!-- convert joint states to TF transforms for rviz, etc -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
-    respawn="false" output="screen">
-    <remap from="/joint_states" to="/nao_dcm/joint_states" /> 
-  </node>
+    output="screen" args="
+      /nao_dcm/Head_controller 
+      /nao_dcm/RightArm_controller /nao_dcm/LeftArm_controller 
+      /nao_dcm/LeftLeg_controller /nao_dcm/RightLeg_controller 
+      /nao_dcm/RightHand_controller /nao_dcm/LeftHand_controller 
+      /nao_dcm/Pelvis_controller /nao_dcm/LeftFoot_controller /nao_dcm/RightFoot_controller
+      /nao_dcm/joint_state_controller "/>
 
 </launch>
