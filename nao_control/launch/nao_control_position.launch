@@ -6,17 +6,17 @@
 
   <!-- load the controllers -->
   <node name="nao_controller" pkg="controller_manager" type="spawner" respawn="false"
-    output="screen" args="
-    /nao_dcm/HeadYaw_position_controller /nao_dcm/HeadPitch_position_controller 
-    /nao_dcm/LShoulderPitch_position_controller /nao_dcm/LShoulderRoll_position_controller
-    /nao_dcm/LElbowYaw_position_controller /nao_dcm/LWristYaw_position_controller /nao_dcm/LElbowRoll_position_controller 
-    /nao_dcm/RShoulderPitch_position_controller /nao_dcm/RShoulderRoll_position_controller
-    /nao_dcm/RElbowYaw_position_controller /nao_dcm/RWristYaw_position_controller /nao_dcm/RElbowRoll_position_controller 
-    /nao_dcm/LHipYawPitch_position_controller /nao_dcm/LHipRoll_position_controller /nao_dcm/LHipPitch_position_controller 
-    /nao_dcm/LKneePitch_position_controller /nao_dcm/LAnklePitch_position_controller /nao_dcm/LAnkleRoll_position_controller 
-    /nao_dcm/RHipYawPitch_position_controller /nao_dcm/RHipRoll_position_controller /nao_dcm/RHipPitch_position_controller 
-    /nao_dcm/RKneePitch_position_controller /nao_dcm/RAnklePitch_position_controller /nao_dcm/RAnkleRoll_position_controller 
-    /nao_dcm/LHand_position_controller /nao_dcm/RHand_position_controller 
-    /nao_dcm/joint_state_controller"/>
+    output="screen" ns="/nao_dcm" args="
+    HeadYaw_position_controller HeadPitch_position_controller 
+    LShoulderPitch_position_controller LShoulderRoll_position_controller
+    LElbowYaw_position_controller LWristYaw_position_controller LElbowRoll_position_controller 
+    RShoulderPitch_position_controller RShoulderRoll_position_controller
+    RElbowYaw_position_controller RWristYaw_position_controller RElbowRoll_position_controller 
+    LHipYawPitch_position_controller LHipRoll_position_controller LHipPitch_position_controller 
+    LKneePitch_position_controller LAnklePitch_position_controller LAnkleRoll_position_controller 
+    RHipYawPitch_position_controller RHipRoll_position_controller RHipPitch_position_controller 
+    RKneePitch_position_controller RAnklePitch_position_controller RAnkleRoll_position_controller 
+    LHand_position_controller RHand_position_controller 
+    joint_state_controller"/>
 
 </launch>
