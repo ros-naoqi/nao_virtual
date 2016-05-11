@@ -95,7 +95,7 @@ To control your simulated robot using MoveIt, run:
     roslaunch nao_moveit_config moveit_planner.launch
 
 
-Then you can use moveit as usual : quick tutorial here https://github.com/ros-nao/nao_moveit_config/blob/master/tuto/tuto_moveit.rst/#use-moveit
+Then you can use moveit as usual : quick tutorial here https://github.com/ros-naoqi/nao_moveit_config/blob/master/tuto/tuto_moveit.rst/#use-moveit
 
 Using Choregraphe behaviours:
 
