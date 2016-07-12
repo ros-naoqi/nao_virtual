@@ -6,7 +6,7 @@ Package developed against ROS Indigo and default gazebo (gazebo 2.2.3)
 Dependencies
 ------------
 
-This packages requires several plugin that you have to fetch on github and compile from source.
+This packages requires several plugins that you have to fetch on github and compile from source.
 
 roboticgroups_gazebo_plugins
 
