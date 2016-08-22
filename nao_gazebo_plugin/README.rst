@@ -8,24 +8,9 @@ Dependencies
 
 This packages requires several plugins that you have to fetch on github and compile from source.
 
-roboticgroups_gazebo_plugins
-
 .. code-block:: bash
     
     git clone git@github.com:roboticsgroup/roboticsgroup_gazebo_plugins.git
-
-pal_msgs
-
-.. code-block:: bash
-    
-    git clone git@github.com:pal-robotics/pal_msgs.git
-
-
-pal_gazebo plugins
-
-.. code-block:: bash
-    
-    git clone git@github.com:pal-robotics/pal_gazebo_plugins.git
     catkin_make
 
 Please also make sure that the package and all the dependencies are up to date
