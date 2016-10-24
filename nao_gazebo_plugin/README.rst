@@ -6,14 +6,7 @@ Package developed against ROS Indigo and default gazebo (gazebo 2.2.3)
 Dependencies
 ------------
 
-This packages requires several plugins that you have to fetch on github and compile from source.
-
-.. code-block:: bash
-    
-    git clone git@github.com:roboticsgroup/roboticsgroup_gazebo_plugins.git
-    catkin_make
-
-Please also make sure that the package and all the dependencies are up to date
+Please make sure that the package and all the dependencies are up to date
 
 .. code-block:: bash
     
