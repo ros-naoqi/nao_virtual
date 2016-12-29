@@ -10,7 +10,7 @@ This packages requires several plugins that you have to fetch on github and comp
 
 .. code-block:: bash
     
-    git clone git@github.com:roboticsgroup/roboticsgroup_gazebo_plugins.git
+    git clone https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git
     catkin_make
 
 Please also make sure that the package and all the dependencies are up to date
