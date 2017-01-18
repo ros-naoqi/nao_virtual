@@ -4,7 +4,9 @@
   <version>0.0.5</version>
   <description>The nao_gazebo_plugin package</description>
 
-  <maintainer email="mikael.arguedas@gmail.com">Mikael Arguedas</maintainer>
+  <maintainer email="surya.ambrose@gmail.com">Surya Ambrose</maintainer>
+  <maintainer email="natalia.lyubova@gmail.com">Natalia Lyubova</maintainer>
+
   <author email="costashatz@gmail.com">Konstantinos Chatzilygeroudis</author>
   <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
 
