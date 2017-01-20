@@ -5,7 +5,8 @@
   <description>The nao_control package</description>
 
   <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>
-  <maintainer email="mikael.arguedas@gmail.com">Mikael Arguedas</maintainer>
+  <maintainer email="surya.ambrose@gmail.com">Surya Ambrose</maintainer>
+  <maintainer email="natalia.lyubova@gmail.com">Natalia Lyubova</maintainer>
 
   <license>Apache 2.0</license>
 
