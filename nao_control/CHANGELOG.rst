@@ -2,8 +2,8 @@
 Changelog for package nao_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.6 (2017-01-31)
+------------------
 * Adding missing dependencies
 * update maintainers
 * Contributors: Mikael Arguedas, Natalia Lyubova

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>nao_control</name>
-  <version>0.0.5</version>
+  <version>0.0.6</version>
   <description>The nao_control package</description>
 
   <author email="mikael.arguedas@gmail.com">Mikael Arguedas</author>

@@ -2,8 +2,8 @@
 Changelog for package nao_gazebo_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.0.6 (2017-01-31)
+------------------
 * adding back missing dependencies to README
 * update maintainers
 * [nao_gazebo_plugin/README.rst] clone using https
