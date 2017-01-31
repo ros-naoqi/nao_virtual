@@ -3,14 +3,16 @@ nao_gazebo_plugin
 
 Package developed against ROS Indigo and default gazebo (gazebo 2.2.3)
 
-Dependencies
+Installation
 ------------
 
 This packages requires several plugins that you have to fetch on github and compile from source.
 
 .. code-block:: bash
-    
+
     git clone https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git
+    git clone https://github.com/pal-robotics/pal_msgs.git
+    git clone https://github.com/pal-robotics/pal_gazebo_plugins.git
     catkin_make
 
 Please also make sure that the package and all the dependencies are up to date
@@ -18,6 +20,11 @@ Please also make sure that the package and all the dependencies are up to date
 .. code-block:: bash
     
     sudo apt-get update
+
+Install the package with apt-get or compile it from source
+
+.. code-block:: bash
+
     sudo apt-get install ros-indigo-nao-gazebo-plugin
 
 
