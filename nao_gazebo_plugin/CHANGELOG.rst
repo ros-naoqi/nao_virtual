@@ -2,6 +2,16 @@
 Changelog for package nao_gazebo_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* adding back missing dependencies to README
+* update maintainers
+* [nao_gazebo_plugin/README.rst] clone using https
+* Update README.rst
+* Update README.rst
+* updating links in README
+* Contributors: Mikael Arguedas, Natalia Lyubova
+
 0.0.5 (2015-10-21)
 ------------------
 

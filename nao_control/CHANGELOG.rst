@@ -2,6 +2,12 @@
 Changelog for package nao_control
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Adding missing dependencies
+* update maintainers
+* Contributors: Mikael Arguedas, Natalia Lyubova
+
 0.0.5 (2015-10-21)
 ------------------
 * configuring to use with MoveIt
