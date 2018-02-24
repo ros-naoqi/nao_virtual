@@ -25,8 +25,6 @@
 - git: {local-name: nao_virtual, uri: 'https://github.com/ros-naoqi/nao_virtual'}
 # Which depends on
 - git: {local-name: roboticsgroup_gazebo_plugins, uri: 'https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins'}
-- git: {local-name: pal_msgs, uri: 'https://github.com/pal-robotics/pal_msgs'}
-- git: {local-name: pal_gazebo_plugins, uri: 'https://github.com/pal-robotics/pal_gazebo_plugins'}
 
 # Meshes stuff
 - git: {local-name: nao_meshes_installer, uri: 'https://github.com/ros-naoqi/nao_meshes_installer'}
