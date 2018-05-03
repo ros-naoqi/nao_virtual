@@ -6,13 +6,16 @@ Package developed against ROS Indigo and default gazebo (gazebo 2.2.3)
 Installation
 ------------
 
-This packages requires several plugins that you have to fetch on github and compile from source.
+This packages requires several plugins that you have to compile from source.
+
+Go to your workspace, clone the packages, and compile:
 
 .. code-block:: bash
-
+    cd src
     git clone https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git
     git clone https://github.com/pal-robotics/pal_msgs.git
     git clone https://github.com/pal-robotics/pal_gazebo_plugins.git
+    cd ..
     catkin_make
 
 Please also make sure that the package and all the dependencies are up to date
