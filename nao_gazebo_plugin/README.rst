@@ -8,9 +8,10 @@ Installation
 
 This packages requires several plugins that you have to compile from source.
 
-Go to your workspace, clone the packages, and compile:
+Go to your workspace, clone the packages, and compile them:
 
 .. code-block:: bash
+
     cd src
     git clone https://github.com/roboticsgroup/roboticsgroup_gazebo_plugins.git
     git clone https://github.com/pal-robotics/pal_msgs.git
