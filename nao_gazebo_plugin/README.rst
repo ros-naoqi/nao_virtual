@@ -6,7 +6,19 @@ Package developed against ROS Indigo and default gazebo (gazebo 2.2.3)
 Installation
 ------------
 
-This packages requires several plugins that you have to compile from source.
+These packages require several plugins that you have to compile from source.
+
+Please make sure that the package and all the dependencies are up to date
+
+.. code-block:: bash
+
+    sudo apt-get update
+
+If you haven't done so yet, install the package with apt-get or compile it from source
+
+.. code-block:: bash
+
+    sudo apt-get install ros-indigo-nao-gazebo-plugin
 
 Go to your workspace, clone the packages, and compile them:
 
@@ -19,24 +31,12 @@ Go to your workspace, clone the packages, and compile them:
     cd ..
     catkin_make
 
-Please also make sure that the package and all the dependencies are up to date
-
-.. code-block:: bash
-    
-    sudo apt-get update
-
-Install the package with apt-get or compile it from source
-
-.. code-block:: bash
-
-    sudo apt-get install ros-indigo-nao-gazebo-plugin
-
 
 How to run it
 -------------
 
 .. code-block:: bash
-    
+
     roslaunch nao_gazebo_plugin nao_gazebo_plugin_H25.launch
 
 
@@ -44,10 +44,10 @@ This will spawn gazebo with nao on a robocup field.
 The ball has the same specs as the official RoboCup ball (size and mass).
 
 The simulation will be in pause mode to allow initialization of all the controllers.
-Wait until eveything is successfully loaded: 
+Wait until eveything is successfully loaded:
 
 .. code-block:: bash
-    
+
     [INFO] [WallTime: 1413899465.061789] [0.000000] Controller Spawner: Loaded controllers: /nao_dcm/Head_controller, /nao_dcm/RightArm_controller, /nao_dcm/LeftArm_controller, /nao_dcm/LeftLeg_controller, /nao_dcm/RightLeg_controller, /nao_dcm/RightHand_controller, /nao_dcm/LeftHand_controller, /nao_dcm/joint_state_controller
 
 
@@ -59,12 +59,12 @@ Your nao should be standing in front of the ball at the center of the field.
 Get sensor data from gazebo
 ---------------------------
 
-All the sensors are simulated using plugins. These plugins are included in the robot description via naoGazebo.xacro file. 
-Each sensor publish data on rostopics. 
+All the sensors are simulated using plugins. These plugins are included in the robot description via naoGazebo.xacro file.
+Each sensor publish data on rostopics.
 
 We can visualize topics using Ctrl+T or Window/Topic Visualization
 
-.. image:: images/TopicVisu.png   
+.. image:: images/TopicVisu.png
    :width: 100%
 
 For example, visualizing Cameras and sonar
